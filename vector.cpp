@@ -185,7 +185,7 @@ public:
     void clear();
 
     template <typename... Args>
-    void emplace_back(Args&&... args);
+    void emplace_back(Args&&... args); // universal reference
 
 };
 
@@ -230,7 +230,6 @@ vector<T, Alloc>::vector(InputIterator first, InputIterator last) : m_alloc() {
         } 
     }
     catch(...) {
-        std::cout << "ASd\n";
         for(int j = 0; j < i; j++) {
             AllocTraits::destroy(m_alloc, m_arr+j);
         }
