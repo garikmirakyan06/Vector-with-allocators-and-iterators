@@ -2,7 +2,7 @@
 #include <initializer_list>
 #include <type_traits> // for std::conditional in common_iterator
 #include <exception>
-
+#include <memory> // for std::allocator
 
 template <typename T, typename Alloc = std::allocator<T>>
 class vector {
