@@ -8,10 +8,10 @@ template <typename T, typename Alloc = std::allocator<T>>
 
 ## Features
 
-- **Custom Allocator Support**: The implementation supports using custom memory allocators via `std::allocator`.
-- **Custom Iterators**: A bidirectional iterator is implemented to traverse the vector.
-- **Memory Management**: The vector dynamically manages memory, resizing and reallocating as needed.
-- **Strong Exception Safety**: Guarantees that memory is properly managed even when an exception occurs during construction or resizing.
+- **Custom Allocator Support**: The implementation supports using custom memory allocators.
+- **Custom Iterators**: A RandomAccess iterator is implemented to traverse the vector.
+- **Optimize Solutions**: I use move semantics when necessary (if we can use) to avoid copies.
+- **Exception Safety**: Guarantees that memory is properly managed, and data is not changed even when an exception occurs during construction or resizing.
 
 ## Supported Operations
 
