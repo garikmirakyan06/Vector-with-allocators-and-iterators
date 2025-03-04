@@ -74,6 +74,8 @@ template <typename T, typename Alloc = std::allocator<T>>
 To build the project and run tests, follow these steps:
 
 ```txt
+git clone --recurse-submodules <repository_url>
+
 mkdir build_for_test
 
 cd build_for_test
