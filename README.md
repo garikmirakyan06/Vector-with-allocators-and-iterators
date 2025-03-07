@@ -3,7 +3,7 @@
 This is a custom implementation of a dynamic array-like container (vector) in C++ that supports memory allocation via an allocator and uses custom iterators to iterate over the elements.
 
 ```cpp
-template <typename T, typename Alloc = std::allocator<T>>
+template <typename T, typename Alloc = std::allocator<T>> class vector;
 ```
 
 ## Features
