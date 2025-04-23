@@ -1,14 +1,15 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(This Vector-with-allocators-and-iterators)
+project(Vector)
 
-project(${This})
+set(CMAKE_CXX_STANDARD 17)
 
-add_subdirectory(googletest)
+add_subdirectory(test/external/googletest)
 
-add_executable(run_test src/vector.cpp test/test.cc)
+add_executable(Vector source/main.cpp source/vector.cpp)
+add_executable(Test src/vector.cpp test/test.cc)
 
-target_link_libraries(run_test gtest gtest_main)
+target_link_libraries(Test gtest gtest_main)
 
 enable_testing()
 
