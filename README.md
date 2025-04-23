@@ -69,20 +69,17 @@ template <typename T, typename Alloc = std::allocator<T>> class vector;
 - `const_iterator cbegin() const`  
 - `const_iterator cend() const`  
 
-## Building and Running Tests
+## Getting started
+```bash
 
-To build the project and run tests, follow these steps:
+cd scripts
 
-```txt
-git clone --recurse-submodules <repository_url>
+./build.sh # if you want to build localy
 
-mkdir build_for_test
+./docker_install.sh # if you dont have docker installed
 
-cd build_for_test
+./docker_run.sh # to run docker
 
-cmake ..
-
-make
 ```
 
 ## Example Usage
